@@ -25,7 +25,6 @@ body {
 .navbar.sticky {
     /* padding: 5px 20px; */
     background-color: transparent;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -39,7 +38,7 @@ body {
     height: 60px;
 }
 
-.logo-text img{
+.logo-text img {
     height: 38px;
     margin-top: 10px;
     margin-left: 2px;
@@ -49,23 +48,23 @@ body {
     align-items: center;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
-  }
-  
-  .logo-text.fade {
+}
+
+.logo-text.fade {
     opacity: 0;
-  }  
+}
 
 
-  .nav-links-inner {
+.nav-links-inner {
     display: flex;
     align-items: center;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
-  }
-  
-  .nav-links-inner.fade {
+}
+
+.nav-links-inner.fade {
     opacity: 0;
-  }
+}
 
 .nav-links {
     display: flex;
@@ -90,14 +89,14 @@ body {
     /* Adjust this to match the navbar height */
 }
 
-.section1{
+.section1 {
     position: relative;
     margin: auto auto 80px;
     text-align: center;
     padding: 120px;
 }
 
-.home_headline{
+.home_headline {
     font-family: var(--display-font-family);
     font-size: 100px;
     font-weight: 900;
@@ -117,7 +116,7 @@ body {
     padding: 0.3em 0;
 }
 
-.home_headline-bottomtext{
+.home_headline-bottomtext {
     margin: 0 auto 40px;
     font-family: var(--display-font-family);
     font-size: 24px;
@@ -133,14 +132,53 @@ body {
     margin-right: 12px;
 }
 
-.Home_banner{
+.Home_banner {
     display: block;
     margin-top: 40px;
 }
 
-.Home_line3{
+.Home_line3 {
     line-height: 1.4;
     margin-top: 4px;
     opacity: .6;
-    color : light-gray;
+    color: light-gray;
 }
+
+.image-section {
+    position: relative;
+    overflow: hidden;
+    top: -155px;
+    margin-left: 151px;
+    transform: scale(0.915);
+    
+  }
+  
+  .desktop-image {
+    position: relative;
+    z-index: 1;
+  }
+
+  .desktop-image img{
+    border-radius: 8px;
+  }
+  
+  .smartphone-image {
+    position: absolute;
+    top: 50%;
+    right: 800px;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Adjust the width and height values as per your images */
+  .smartphone-image img {
+    width: 200px;
+    height: auto;
+  }
+  
+  /* Optional styling for the section */
+  .image-section {
+    padding: 40px;
+  }
+  

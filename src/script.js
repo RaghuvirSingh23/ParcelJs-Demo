@@ -37,3 +37,12 @@ document.addEventListener('mousemove', (e) => {
 
   rainbowButton.style.backgroundPosition = `${x * 200}% ${y * 200}%`;
 });
+
+window.addEventListener('scroll', function() {
+  const smartphoneImage = document.querySelector('.smartphone-image');
+  const scrollPosition = window.pageYOffset;
+
+  // Adjust the value based on how much you want the smartphone image to move with the scroll
+  smartphoneImage.style.transform = `translateY(-${scrollPosition * 0.1}px)`;
+});
+

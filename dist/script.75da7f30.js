@@ -150,6 +150,13 @@ document.addEventListener('mousemove', function (e) {
   var y = e.clientY / window.innerHeight;
   rainbowButton.style.backgroundPosition = "".concat(x * 200, "% ").concat(y * 200, "%");
 });
+window.addEventListener('scroll', function () {
+  var smartphoneImage = document.querySelector('.smartphone-image');
+  var scrollPosition = window.pageYOffset;
+
+  // Adjust the value based on how much you want the smartphone image to move with the scroll
+  smartphoneImage.style.transform = "translateY(-".concat(scrollPosition * 0.1, "px)");
+});
 },{}],"../../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
