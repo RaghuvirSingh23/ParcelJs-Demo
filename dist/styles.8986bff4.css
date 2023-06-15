@@ -72,8 +72,8 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-top: 20px;
-    margin-right: 22px;
+    margin-top: 14px;
+    margin-right: 24px;
 }
 
 .nav-links li {
@@ -88,6 +88,61 @@ body {
 .content {
     margin-top: 80px;
     /* Adjust this to match the navbar height */
+}
+
+.section1{
+    position: relative;
+    margin: auto auto 80px;
+    text-align: center;
+    padding: 120px;
+}
+
+.home_headline{
+    font-family: var(--display-font-family);
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -.015em;
+    background: url(https://d33wubrfki0l68.cloudfront.net/_next/static/media/f4f16a82938b3471164dab57854d8c5b36bff0ff/big-gradient-2.cec2615303f228afe4e48bc145bee6a7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+    margin: auto;
+    padding: 0.3em 0;
+}
+
+.home_headline-bottomtext{
+    margin: 0 auto 40px;
+    font-family: var(--display-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    width: -moz-calc(3.5/var(--column-count) * (var(--inner-width) - (var(--gutter) * 2)));
+    width: calc(3.5 / var(--column-count) * (var(--inner-width) - (var(--gutter) * 2)));
+}
+
+.Home_actionButton__1DHyg {
+    height: 48px;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+.Home_banner{
+    display: block;
+    margin-top: 40px;
+}
+
+.Home_line3{
+    line-height: 1.4;
+    margin-top: 4px;
+    opacity: .6;
+    color : light-gray;
 }
 
 /*# sourceMappingURL=/styles.8986bff4.css.map */
