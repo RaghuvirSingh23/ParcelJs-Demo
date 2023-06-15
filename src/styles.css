@@ -164,11 +164,15 @@ body {
   
   .smartphone-image {
     position: absolute;
-    top: 50%;
-    right: 800px;
+    top: 40%;
+    right: 400px;
     transform: translateY(-50%);
     z-index: 2;
     transition: transform 0.3s ease-in-out;
+  }
+
+  .smartphone-image img{
+    transform: scale(1.6);
   }
   
   /* Adjust the width and height values as per your images */
@@ -181,4 +185,6 @@ body {
   .image-section {
     padding: 40px;
   }
+  
+  
   

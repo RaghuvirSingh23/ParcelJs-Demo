@@ -40,9 +40,9 @@ document.addEventListener('mousemove', (e) => {
 
 window.addEventListener('scroll', function() {
   const smartphoneImage = document.querySelector('.smartphone-image');
-  const scrollPosition = window.pageYOffset;
+  const scrollPosition = window.scrollY;
 
-  // Adjust the value based on how much you want the smartphone image to move with the scroll
   smartphoneImage.style.transform = `translateY(-${scrollPosition * 0.1}px)`;
 });
+
 
