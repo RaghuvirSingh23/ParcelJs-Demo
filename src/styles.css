@@ -1,10 +1,28 @@
 /* Global styles */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(15, 18, 22);
     margin: 0;
     padding: 0;
     height: 2000px;
+
 }
 
 .navbar {
@@ -144,47 +162,230 @@ body {
     color: light-gray;
 }
 
-.image-section {
+.section2 {
     position: relative;
     overflow: hidden;
     top: -155px;
     margin-left: 151px;
     transform: scale(0.915);
-    
-  }
-  
-  .desktop-image {
+}
+
+.desktop-image {
     position: relative;
     z-index: 1;
-  }
+}
 
-  .desktop-image img{
+.desktop-image img {
     border-radius: 8px;
-  }
-  
-  .smartphone-image {
+}
+
+.smartphone-image {
     position: absolute;
     top: 40%;
     right: 400px;
     transform: translateY(-50%);
     z-index: 2;
     transition: transform 0.3s ease-in-out;
-  }
+}
 
-  .smartphone-image img{
+.smartphone-image img {
     transform: scale(1.6);
-  }
-  
-  /* Adjust the width and height values as per your images */
-  .smartphone-image img {
+}
+
+/* Adjust the width and height values as per your images */
+.smartphone-image img {
     width: 200px;
     height: auto;
-  }
-  
-  /* Optional styling for the section */
-  .image-section {
+}
+
+/* Optional styling for the section */
+.section2 {
     padding: 40px;
-  }
-  
-  
-  
+}
+
+/* Section 3 */
+
+.section3 {
+    display: flex;
+    align-items: stretch;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 353px;
+    max-width: 700px;
+}
+
+.upper-left {
+    flex: 1;
+
+}
+
+.lower-left {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, -moz-calc(2/var(--column-count) * (var(--inner-width) - (var(--gutter) * 2))));
+    grid-template-columns: repeat(2, calc(2 / var(--column-count) * (var(--inner-width) - (var(--gutter) * 2))));
+    margin-top: 100px;
+}
+
+.lower-left-left,
+.lower-left-right {
+    flex: 1;
+
+}
+
+.right-side {
+    flex: 1;
+
+}
+
+.right-side img {
+    height: auto;
+    position: relative;
+    margin-left: 60px;
+    top: -16px;
+
+}
+
+.upper-left-heading {
+    margin: auto;
+    padding: 0.5em 0;
+    font-family: var(--display-font-family);
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -.015em;
+    background: url(https://d33wubrfki0l68.cloudfront.net/_next/static/media/f4f16a82938b3471164dab57854d8c5b36bff0ff/big-gradient-2.cec2615303f228afe4e48bc145bee6a7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+
+}
+
+.upper-left-h4 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+.upper-left-h3 {
+    font-family: var(--display-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.left-left-item {
+    margin: 20px 0 60px;
+    padding-right: calc(.5 / var(--column-count) * (var(--inner-width) - (var(--gutter) * 2)));
+}
+
+.left-right-item {
+    margin: 20px 0 60px;
+    padding-right: calc(.5 / var(--column-count) * (var(--inner-width) - (var(--gutter) * 2)));
+}
+
+.left-left-item-name {
+    margin-bottom: 8px;
+    font-family: var(--display-font-family);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.left-left-item-desc {
+    font-weight: 600;
+    opacity: .5;
+}
+
+.left-right-item-name {
+    margin-bottom: 8px;
+    font-family: var(--display-font-family);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.left-right-item-desc {
+    font-weight: 600;
+    opacity: .5;
+}
+
+/* Section 4 */
+.section4{
+    margin-top: 150px;
+}
+.section4-heading {
+    text-align: center;
+    padding: 0.5em 0;
+    font-family: var(--display-font-family);
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -.015em;
+    background: url(https://d33wubrfki0l68.cloudfront.net/_next/static/media/f4f16a82938b3471164dab57854d8c5b36bff0ff/big-gradient-2.cec2615303f228afe4e48bc145bee6a7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+    margin-bottom: 83px;
+}
+
+.section4-heading-text {
+    text-align: center;
+    width: -moz-calc(4/var(--column-count) * (var(--inner-width) - (var(--gutter) * 2)));
+    width: calc(4 / var(--column-count) * (var(--inner-width) - (var(--gutter) * 2)));
+    margin: auto;
+    font-family: var(--display-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.section4-items {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    gap: 40px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 100px;
+
+}
+
+.section4-item-kind {
+    margin-bottom: 60px;
+}
+
+.section4-item-name {
+    margin-bottom: 12px;
+    font-family: var(--display-font-family);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-top: 42.5px;
+}
+
+.section4-item-desc {
+    font-weight: 600;
+    opacity: .5;
+    max-width: 373px;
+}
+
